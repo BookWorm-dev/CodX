@@ -9,7 +9,7 @@ html {
 html,
 body {
 	height: 100%;
-	// font-family: $font_1;
+	font-family: $font_1;
 	font-weight: 400;
 	scroll-behavior: smooth;
 }
@@ -28,50 +28,32 @@ body {
 
 .section {
 	width: 100%;
+
+	&_hero {
+		min-height: 74rem;
+	}
 }
 
 .container {
-	// max-width: 126rem;
-	width: 100%;
-
+	max-width: 120rem;
+	/* 	width: 100%;
+ */
 	margin: 0 auto;
 }
 
-/* remove */
-body {
-	font-family: cursive;
+.title {
+	font-size: 6.4rem;
+	font-weight: 400;
+	line-height: 6.4rem;
+	letter-spacing: 0.4px;
+	color: $dark_shade_gray;
+	padding-bottom: 2.5rem;
 }
 
-header,
-footer {
-	padding: 30px 0;
-	display: flex;
-	align-items: center;
-	min-height: 120px;
-	font-size: 50px;
-	text-align: center;
-	justify-content: center;
-	background-color: #ccc;
-
-	// @include bp($point_2, min) {
-	// 	background-color: tomato;
-	// }
+.subtitle {
+	font-size: 1.7rem;
+	font-weight: 400;
+	line-height: 2.6rem;
+	letter-spacing: 0.4px;
+	color: $dark_shade_gray;
 }
-
-.hello {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-
-	height: calc(100vh - 240px);
-	color: brown;
-	font-size: 5rem;
-
-	text-align: center;
-	// p {
-	// 	color: $color_black;
-	// }
-}
-
-/* remove */

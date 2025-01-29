@@ -1,0 +1,32 @@
+@use '../helpers/abstracts' as *;
+
+.faq-accordion {
+    width: 100%;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 2.3rem 2.6rem 2.9rem;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        position: relative;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.47999998927116394px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    /*     &__content {
+        visibility: hidden;
+    } */
+}
+
+.hidden {
+    display: none;
+}
