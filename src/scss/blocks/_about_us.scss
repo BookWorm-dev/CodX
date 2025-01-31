@@ -1,0 +1,92 @@
+@use '../helpers/abstracts' as *;
+
+.author-tabs {
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    align-items: center;
+
+    &__content {
+        display: none;
+
+        &--active {
+            display: flex;
+            gap: 5rem;
+        }
+    }
+
+    &__block1 {
+        padding-top: 6.4rem;
+        width: 55.2rem;
+        height: 39.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__img {
+        width: auto;
+        height: 100%;
+    }
+
+    &__block2 {
+        padding-top: 11.1rem;
+        width: 55.2rem;
+    }
+
+    &__desrc {
+        padding-bottom: 1.9rem;
+        color: $pink;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.8rem;
+        letter-spacing: 0.4px;
+    }
+
+    &__title {
+        padding-bottom: 2.1rem;
+        font-size: 3.6rem;
+        font-weight: 400;
+        line-height: 3.6rem;
+        letter-spacing: 0.4px;
+        color: $dark_shade_gray;
+    }
+
+    &__text {
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 2.6rem;
+        letter-spacing: 0.4px;
+        color: $dark_shade_gray;
+
+    }
+
+}
+
+.author-tab {
+    width: 17.9rem;
+    height: 5rem;
+    border-radius: 3rem;
+    border: 1px solid $dark_shade_gray;
+    text-align: center;
+    padding: 1.1rem 6.6rem 1.7rem;
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    letter-spacing: 0.4px;
+    text-wrap: nowrap;
+    color: $dark_shade_gray;
+
+    &--active {
+        background-color: $dark_shade_gray;
+        color: $color_white;
+
+    }
+}
+
+.active {
+    background-color: $dark_shade_gray;
+    color: $color_white;
+
+}

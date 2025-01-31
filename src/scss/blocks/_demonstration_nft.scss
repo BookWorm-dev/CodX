@@ -1,0 +1,15 @@
+@use '../helpers/abstracts' as *;
+
+.swiper-slide {
+    width: 152px;
+    height: 152px;
+
+    .swiper__img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.swiper-wrapper {
+    width: 100vw;
+}

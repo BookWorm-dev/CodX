@@ -1,9 +1,29 @@
 'use strict';
 
-const body = document.querySelector('body');
+const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 9,
+    autoplay: {
+        delay: 2500,
+    }
+});
 
-const modal = document.querySelectorAll('.faq-accordion__content');
+const navTabs = document.querySelectorAll('.author-tab');
+const tabContents = document.querySelectorAll('.author-tabs__content');
 
-modal.addEventListener('click', function () {
-    modal.classList.remove('hidden')
-}) 
+navTabs.forEach(tab => {
+    tab.addEventListener('click', function () {
+        navTabs.forEach(item => item.classList.remove('author-tab--active'));
+        this.classList.add('author-tab--active');
+    });
+});
+navTabs.forEach((tab, index) => {
+    tab.addEventListener('click', function () {
+        navTabs.forEach(item => item.classList.remove('author-tab--active'));
+        tabContents.forEach(content => content.classList.remove('author-tabs__content--active'));
+
+        tab.classList.add('author-tab--active');
+        tabContents[index].classList.add('author-tabs__content--active');
+    });
+});
